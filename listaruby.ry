@@ -1,0 +1,73 @@
+class Nodo
+	def initialize (dato, ref = nil)
+		@dato = dato
+	end
+	def get_dato
+		return @dato
+	end
+	def get_ref
+		return @ref
+	end
+	def set_ref (arg)
+		@ref = arg
+	end
+
+end		
+
+class Lista
+	def initialize
+		@tamano = 0
+		@header = nil
+	end
+	
+	def insertar(i)
+		
+		
+		if (@header.nil?)
+			@header = Nodo.new(i)
+		else
+			agregar = @header
+			while (agregar.get_ref != nil)
+				agregar = agregar.get_ref
+			end
+			resultadoagregar = Nodo.new(i)
+			agregar.set_ref (resultadoagregar)
+		end
+	end
+	def eliminar(j)
+		if (j == 0)
+			@header = @header.ref
+			return
+		end
+		x =  1
+		eliminar = @header
+		while (x < j)
+			if (elminiar == nil)
+				return
+			end
+			eliminar = eliminar.get_ref
+			x = x + 1
+		end
+		eliminar.get_ref = eliminar.get_ref.get_ref
+	end
+	def imprimir
+		k = @header
+		while(k != nil)
+			puts k.get_dato
+			k = k.get_ref
+		end
+	end
+end
+
+
+x = 0
+L = Lista.new()
+while (x != "-1")
+	x = gets.chomp
+	if (x != "-1")
+		L.insertar(x)
+	end	
+end
+L.imprimir()
+	
+		
