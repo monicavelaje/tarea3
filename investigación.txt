@@ -1,0 +1,69 @@
+Variables Estáticas:
+Son variables que han sido ubicadas estáticamente y cuyo tiempo de vida se extiende durante toda la ejecución del programa. Normalmente una variable estática tiene una vida o un ámbito más amplio que el de las otras variables.
+
+Ciclos de vida:
+
+Variables de instancia (u objeto):
+
+•	Se crean cuando se crea el objeto que las contiene.
+•	Se inicializan por defecto si no se hace de modo explícito:
+o	0 para números, "false" para booleano, "null" para objetos.
+•	Se destruyen cuando el recolector de basura de Java
+•	no encuentra referencias activas para el objeto.
+
+Variables estáticas (o de clase):
+
+•	Se crean cuando la clase se usa por primera vez.
+o	Se inicializan por defecto si no se hace de modo explícito:
+•	0 para números, "false" para booleano, "null" para objetos
+•	Suelen existir para el resto del programa (salvo que no esté cargado).
+
+Variables locales (o de bloque):
+
+Creadas en la sentencia en la que están definidas.
+No se inicializan por defecto. Contienen datos imprevisibles.
+Se destruyen al salir del bloque (en la llave final).
+
+
+Memoria Dinámica:
+Se  refiere a aquella memoria que no puede ser definida ya que no se conoce o no se tiene idea del número de la variable a considerarse, la solución a este problema es la memoria dinámica que permite solicitar memoria en tiempo de ejecución, por lo que cuanta más memoria se necesite, más se solicita al sistema operativo. El sistema operativo maneja la memoria gracias al uso de punteros, por la misma naturaleza del proceso nos impide conocer el tamaño de la memoria necesaria en el momento de compilar.
+
+Clase:
+Es una plantilla para la creación de objetos de datos según un modelo predefinido. Las clases se utilizan para representar entidades o conceptos, como los sustantivos en el lenguaje. Cada clase es un modelo que define un conjunto de variables -el estado, y métodos apropiados para operar con dichos datos -el comportamiento. Cada objeto creado a partir de la clase se denomina instancia de la clase.
+
+Objeto:
+Es una unidad dentro de un programa de computadora que consta de un estado y de un comportamiento, que a su vez constan respectivamente de datos almacenados y de tareas realizables durante el tiempo de ejecución. Un objeto puede ser creado instanciando una clase, como ocurre en la programación orientada a objetos, o mediante escritura directa de código y la replicación otros objetos, como ocurre en la programación basada en prototipos.
+
+Herencia:
+Es el mecanismo más utilizado para alcanzar algunos de los objetivos más preciados en el desarrollo de software como lo son la reutilización y la extensibilidad. A través de ella los diseñadores pueden crear nuevas clases partiendo de una clase o de una jerarquía de clases preexistente evitando con ello el rediseño, la modificación y verificación de la parte ya implementada.
+
+Sobrecarga:
+Es la capacidad de un lenguaje de programación, que permite nombrar con el mismo identificador diferentes variables u operaciones.
+
+Instanciación:
+Acción y efecto de crear una instancia. El crear en memoria un ejemplar de un conjunto de datos y código definido por una clase o estructura.
+
+Ensombrecimiento de variables:
+Este ocurre cuando una variable declarada con un alcance (método o clase interna) tiene el mismo nombre que la variable declarada en el alcance externo. En el nivel de los identificadores (nombres, en vez de variables), esto es conocido como “name masking”. Se dice que esta variable externa es ensombrecida por la variable interna, mientras el identificador interno ensombrece al identificador externo. 
+
+
+Bibliografía
+
+https://es.wikipedia.org/wiki/Sobrecarga_(inform%C3%A1tica)
+
+https://es.wikipedia.org/wiki/Herencia_(inform%C3%A1tica)
+
+https://es.wikipedia.org/wiki/Instancia_(inform%C3%A1tica)
+
+https://es.wikipedia.org/wiki/Objeto_(programaci%C3%B3n)
+
+https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos
+
+https://es.wikipedia.org/wiki/Clase_(inform%C3%A1tica)
+
+https://es.wiktionary.org/wiki/instanciaci%C3%B3n
+
+
+
+
+
