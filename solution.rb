@@ -22,7 +22,7 @@ class SinglyLinkedList
     end
 
     def add(value)
-        #adds a new node to the list, amakes it the new head and links it to the former head
+        #adds a new node to the list, and makes it the new head and links it to the former head
         new_node = Node.new(value)
         new_node.next_node = @head
 
